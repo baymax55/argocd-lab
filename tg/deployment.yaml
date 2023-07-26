@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tg
+spec:
+  selector:
+    matchLabels:
+      app: tg
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: tg
+    spec:
+      containers:
+      - name: tg
+        image: registry.cn-hangzhou.aliyuncs.com/baymax56/tg-save-thread:2.3
+        ports:
+        - containerPort: 5000
