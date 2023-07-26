@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: blog
-        image: 
+        image: registry.cn-hangzhou.aliyuncs.com/baymax56/blog:2023307261426
         ports:
         - containerPort: 80
